@@ -37,5 +37,5 @@ RUN rm -rf /usr/lib/python2.7 && \
     rm -rf /var/lib/dpkg/info/libpython2.7-stdlib:amd64.prerm && \
     rm -rf /usr/share/doc/python2.7 && \
     rm -rf /usr/share/doc/libidn2-0
-CMD sleep infinity  
+CMD service slapd restart; sleep infinity  
 #CMD ["/sbin/init"]
